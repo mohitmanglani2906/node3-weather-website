@@ -113,6 +113,11 @@ app.get('*',(req,res)=>{
     })
 })
 app.listen(port,(error)=>{
-
-    console.log('Server is up on port ' + port)
+    if(error){
+        console.log(error)
+    }
+    else{
+        console.log('Server is up on port ' + port)
+    }
+    
 })
